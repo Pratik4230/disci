@@ -73,3 +73,70 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+..........................
+# Node modules
+/node_modules/
+
+# React Native bundler files
+/.expo/
+/.expo-shared/
+
+/ios/Pods/
+/ios/Podfile.lock
+/ios/DerivedData/
+/ios/build/
+/ios/*.xcuserstate
+/ios/xcuserdata/
+/ios/.xcode/*
+
+# Android specific files
+/android/.gradle/
+/android/app/build/
+/android/build/
+/.idea/
+/.android/
+
+# Metro bundler cache
+/metro-cache/
+/.hermes/
+/debug/
+*.log
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory
+/coverage/
+
+# MacOS Finder files
+.DS_Store
+
+# VS Code settings (if you're using VS Code)
+.vscode/
+
+# JetBrains IDE (e.g., IntelliJ, WebStorm)
+.idea/
+
+# Testing output
+/debug/
+*.hprof
+*.log
+
+# Watchman files (used for filesystem monitoring)
+.watchmanconfig
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
+
+# Cloud service specific config (e.g., Firebase, etc.)
+*.env
