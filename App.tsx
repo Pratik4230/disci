@@ -1,27 +1,26 @@
 import './gesture-handler'; //must first
 import React from 'react';
 
-import {
- 
-  Text,
-  
-  View,
-} from 'react-native';
 
 import './global.css'
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/RootNavigator';
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Toast from 'react-native-toast-message';
+
+
+const queryClient = new QueryClient();
 
 function App(): React.JSX.Element {
-  
-
-
  
-
   return (
-    <View className='bg-white flex-1' >
-      
-      <Text className='text-2xl color-black'   >Hello hiiiiii</Text>
-    </View>
+    <NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+      <RootNavigator/>
+      <Toast />
+      </QueryClientProvider>
+    </NavigationContainer>
   );
 }
 
